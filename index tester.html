@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- Déclaration du type de document HTML5 -->
+<html lang="fr">
+<!-- Balise HTML avec l'attribut lang pour définir la langue -->
+
+<head>
+    <!-- Contient les informations sur la page -->
+    <meta charset="UTF-8">
+    <!-- Définit l'encodage des caractères pour être compatible avec les accents français -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permet de rendre la page responsive sur les appareils mobiles -->
+    <meta name="description" content="Menu du restaurant Le Gourmet avec des plats délicieux">
+    <!-- Meta description pour les moteurs de recherche -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon de la page -->
+    <title>Le Gourmet - Menu</title>
+    <!-- Titre de la page qui s'affiche dans l'onglet du navigateur -->
+</head>
+
+<body>
+    <!-- Début du corps de la page où se trouve tout le contenu visible -->
+
+    <!-- Titre principal du menu avec plusieurs balises supplémentaires -->
+    <header>
+        <!-- Balise header pour le contenu d'en-tête -->
+        <hgroup>
+            <!-- Balise hgroup pour grouper plusieurs titres (non obligatoire mais sémantique) -->
+            <h1>Le Gourmet</h1>
+            <h2>Menu officiel</h2>
+        </hgroup>
+
+        <figure>
+            <!-- Balise figure pour ajouter une image avec une légende -->
+            <img src="restaurant.jpg" alt="Photo du restaurant Le Gourmet">
+            <!-- Balise img pour une image avec un texte alternatif -->
+            <figcaption>Bienvenue au restaurant Le Gourmet, où la gastronomie est un art.</figcaption>
+            <!-- Figcaption pour ajouter une légende à l'image -->
+        </figure>
+
+        <nav>
+            <!-- Balise nav pour la navigation -->
+            <ul>
+                <li><a href="#entrees">Entrées</a></li>
+                <li><a href="#plats">Plats Principaux</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#boissons">Boissons</a></li>
+            </ul>
+            <!-- Liste de liens pour naviguer à différentes sections de la page -->
+        </nav>
+    </header>
+
+    <!-- Section des Entrées avec encore plus de balises -->
+    <section id="entrees">
+        <h2>Entrées</h2>
+
+        <article>
+            <!-- Article pour chaque entrée -->
+            <header>
+                <h3>Salade Caprese</h3>
+                <!-- Titre de l'article -->
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+                <!-- Balise time pour indiquer une date ou un horaire spécifique -->
+            </header>
+            <p><em>Tomates fraîches, mozzarella et basilic arrosés d'un glaçage balsamique.</em></p>
+            <!-- Description en italique -->
+            <blockquote cite="https://www.recette-caprese.com">
+                "La salade préférée des amateurs de fraîcheur." - Revue Gastronomique
+            </blockquote>
+            <!-- Blockquote pour une citation avec l'attribut cite pour indiquer la source -->
+            <footer>
+                <p><small>Origine des produits : <abbr title="Indication Géographique Protégée">IGP</abbr> Italie.</small></p>
+                <!-- Small pour un texte secondaire plus petit, et abbr pour un acronyme avec son titre explicatif -->
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h3>Bruschetta</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><em>Pain grillé garni de tomates hachées, ail et basilic frais.</em></p>
+        </article>
+
+        <article>
+            <header>
+                <h3>Gougères</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><em>Petits choux au fromage servis chauds.</em></p>
+        </article>
+
+        <details>
+            <!-- Balise details pour ajouter une section repliable avec des informations supplémentaires -->
+            <summary>En savoir plus sur nos entrées</summary>
+            <p>Nos entrées sont préparées à partir des meilleurs ingrédients locaux, garantissant fraîcheur et saveur.</p>
+        </details>
+    </section>
+
+    <!-- Section des Plats principaux -->
+    <section id="plats">
+        <h2>Plats Principaux</h2>
+        <article>
+            <header>
+                <h3>Saumon grillé</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><strong>Ingrédients :</strong> Filet de saumon, sauce au beurre citronné, légumes de saison.</p>
+            <p>Calories : <output name="calories-saumon">650 kcal</output></p>
+            <!-- Output pour afficher une valeur calculée (ici une donnée simulée) -->
+        </article>
+
+        <article>
+            <header>
+                <h3>Poulet au citron</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><strong>Ingrédients :</strong> Blanc de poulet rôti, légumes grillés, sauce au citron.</p>
+            <p>Calories : <output name="calories-poulet">550 kcal</output></p>
+        </article>
+
+        <article>
+            <header>
+                <h3>Pâtes Primavera</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><strong>Ingrédients :</strong> Pâtes fraîches, légumes de saison, sauce légère à l'ail.</p>
+            <p>Calories : <output name="calories-pasta">600 kcal</output></p>
+        </article>
+    </section>
+
+    <!-- Section des Desserts avec un tableau amélioré -->
+    <section id="desserts">
+        <h2>Desserts</h2>
+        <table>
+            <!-- Balise table pour un tableau -->
+            <caption>Nos desserts du jour</caption>
+            <!-- Caption pour titre du tableau -->
+            <thead>
+                <!-- Thead pour l'en-tête -->
+                <tr>
+                    <th scope="col">Nom</th>
+                    <!-- Th pour les en-têtes des colonnes -->
+                    <th scope="col">Description</th>
+                    <th scope="col">Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fondue au chocolat</td>
+                    <!-- Td pour une cellule de tableau -->
+                    <td>Assortiment de fruits et guimauves avec fondue au chocolat.</td>
+                    <td>8,50€</td>
+                </tr>
+                <tr>
+                    <td>Tarte Tatin</td>
+                    <td>Tarte aux pommes caramélisées.</td>
+                    <td>7,00€</td>
+                </tr>
+                <tr>
+                    <td>Mousse au chocolat</td>
+                    <td>Mousse légère au chocolat noir.</td>
+                    <td>6,50€</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- Tfoot pour le pied de tableau -->
+                <tr>
+                    <td colspan="3">Les prix incluent la TVA.</td>
+                    <!-- Colspan pour fusionner les cellules sur trois colonnes -->
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Section des Boissons avec des listes de définitions et des formulaires -->
+    <section id="boissons">
+        <h2>Boissons</h2>
+        <dl>
+            <!-- Dl pour liste de définitions -->
+            <dt>Vin rouge de Bordeaux</dt>
+            <!-- Dt pour le terme -->
+            <dd>Un vin riche avec des notes de fruits noirs et d'épices.</dd>
+            <!-- Dd pour la description -->
+            <dt>Thé glacé maison</dt>
+            <dd>Thé noir infusé avec une touche de citron.</dd>
+            <dt>Cocktail sans alcool</dt>
+            <dd>Mélange rafraîchissant de jus de fruits tropicaux.</dd>
+        </dl>
+
+        <form>
+            <!-- Formulaire pour commander une boisson -->
+            <fieldset>
+                <!-- Fieldset pour regrouper les éléments du formulaire -->
+                <legend>Commande rapide de boissons</legend>
+                <!-- Légende du formulaire -->
+                <label for="boisson">Choisissez votre boisson :</label>
+                <select id="boisson" name="boisson">
+                    <!-- Select pour un menu déroulant -->
+                    <option value="vin">Vin rouge</option>
+                    <!-- Option pour chaque choix -->
+                    <option value="the">Thé glacé</option>
+                    <option value="cocktail">Cocktail sans alcool</option>
+                </select>
+
+                <label for="quantite">Quantité :</label>
+                <input type="number" id="quantite" name="quantite" min="1

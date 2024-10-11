@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menu du restaurant Le Gourmet avec des plats délicieux">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Le Gourmet - Menu</title>
+</head>
+
+<body>
+    <!-- En-tête principal -->
+    <header>
+        <hgroup>
+            <h1 style="text-align: center;">Le Gourmet</h1>
+            <h2 style="text-align: center;">Menu officiel</h2>
+        </hgroup>
+
+        <!-- Ajout d'un séparateur visuel -->
+        <hr>
+
+        <figure style="text-align: center;">
+            <img src="restaurant.jpg" alt="Photo du restaurant Le Gourmet" width="300">
+            <figcaption><em>Bienvenue au restaurant Le Gourmet, où la gastronomie est un art.</em></figcaption>
+        </figure>
+
+        <nav>
+            <ul style="text-align: center;">
+                <li><a href="#entrees">Entrées</a></li>
+                <li><a href="#plats">Plats Principaux</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#boissons">Boissons</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+    </header>
+
+    <!-- Section des Entrées -->
+    <section id="entrees">
+        <h2>Entrées</h2>
+
+        <article>
+            <header>
+                <h3>Salade Caprese</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><strong>Ingrédients :</strong> Tomates fraîches, mozzarella et basilic arrosés d'un glaçage balsamique.</p>
+            <blockquote cite="https://www.recette-caprese.com">
+                "La salade préférée des amateurs de fraîcheur." - Revue Gastronomique
+            </blockquote>
+            <footer>
+                <p><small>Origine des produits : <abbr title="Indication Géographique Protégée">IGP</abbr> Italie.</small></p>
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h3>Bruschetta</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><strong>Ingrédients :</strong> Pain grillé garni de tomates hachées, ail et basilic frais.</p>
+        </article>
+
+        <article>
+            <header>
+                <h3>Gougères</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><strong>Ingrédients :</strong> Petits choux au fromage servis chauds.</p>
+        </article>
+
+        <!-- Détails supplémentaires sur les entrées -->
+        <details>
+            <summary>En savoir plus sur nos entrées</summary>
+            <p>Nos entrées sont préparées à partir des meilleurs ingrédients locaux, garantissant fraîcheur et saveur.</p>
+        </details>
+
+        <hr>
+    </section>
+
+    <!-- Section des Plats principaux -->
+    <section id="plats">
+        <h2>Plats Principaux</h2>
+
+        <article>
+            <header>
+                <h3>Saumon grillé</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><strong>Ingrédients :</strong> Filet de saumon, sauce au beurre citronné, légumes de saison.</p>
+            <p><strong>Calories :</strong> <output name="calories-saumon">650 kcal</output></p>
+        </article>
+
+        <article>
+            <header>
+                <h3>Poulet au citron</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><strong>Ingrédients :</strong> Blanc de poulet rôti, légumes grillés, sauce au citron.</p>
+            <p><strong>Calories :</strong> <output name="calories-poulet">550 kcal</output></p>
+        </article>
+
+        <article>
+            <header>
+                <h3>Pâtes Primavera</h3>
+                <time datetime="2024-10-11">Disponibilité : Aujourd'hui</time>
+            </header>
+            <p><strong>Ingrédients :</strong> Pâtes fraîches, légumes de saison, sauce légère à l'ail.</p>
+            <p><strong>Calories :</strong> <output name="calories-pasta">600 kcal</output></p>
+        </article>
+
+        <hr>
+    </section>
+
+    <!-- Section des Desserts avec un tableau -->
+    <section id="desserts">
+        <h2>Desserts</h2>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <caption><strong>Nos desserts du jour</strong></caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fondue au chocolat</td>
+                    <td>Assortiment de fruits et guimauves avec fondue au chocolat.</td>
+                    <td>8,50€</td>
+                </tr>
+                <tr>
+                    <td>Tarte Tatin</td>
+                    <td>Tarte aux pommes caramélisées.</td>
+                    <td>7,00€</td>
+                </tr>
+                <tr>
+                    <td>Mousse au chocolat</td>
+                    <td>Mousse légère au chocolat noir.</td>
+                    <td>6,50€</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Les prix incluent la TVA.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <hr>
+    </section>
+
+    <!-- Section des Boissons -->
+    <section id="boissons">
+        <h2>Boissons</h2>
+
+        <dl>
+            <dt><strong>Vin rouge de Bordeaux</strong></dt>
+            <dd>Un vin riche avec des notes de fruits noirs et d'épices.</dd>
+
+            <dt><strong>Thé glacé maison</strong></dt>
+            <dd>Thé noir infusé avec une touche de citron.</dd>
+
+            <dt><strong>Cocktail sans alcool</strong></dt>
+            <dd>Mélange rafraîchissant de jus de fruits tropicaux.</dd>
+        </dl>
+
+        <hr>
+
+        <!-- Formulaire de commande -->
+        <form>
+            <fieldset>
+                <legend><strong>Commande rapide de boissons</strong></legend>
+
+                <label for="boisson">Choisissez votre boisson :</label>
+                <select id="boisson" name="boisson">
+                    <option value="vin">Vin rouge</option>
+                    <option value="the">Thé glacé</option>
+                    <option value="cocktail">Cocktail sans alcool</option>
+                </select>
+
+                <br><br>
+
+                <label for="quantite">Quantité :</label>
+                <input type="number" id="quantite" name="quantite" min="1" max="10">
+
+                <br><br>
+
+                <button type="submit">Commander</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Lien vers la page de contact -->
+    <footer>
+        <p style="text-align: center;">
+            <a href="contact.html">Contactez-nous pour les réservations</a>
+        </p>
+    </footer>
+</body>
+
+</html>
